@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projectpagina</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <!-- Eigen CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Navigatiebalk -->
+  <header class="p-3 bg-primary">
+    <nav class="container-fluid d-flex justify-content-between align-items-center">
+      <section class="d-flex align-items-center">
+        <img src="assets/images/logo.png" alt="Logo" class="rounded-circle me-3" width="50" height="50">
+        <a href="index.html" class="btn btn-nav text-white me-2">Home</a>
+        <a href="portfolio.html" class="btn btn-nav text-white me-2">Projects</a>
+        <a href="contact.html" class="btn btn-nav text-white">Contact</a>
+      </section>
+      <section class="dropdown">
+        <button class="btn btn-nav text-white rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Projects
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
+          <li><a class="dropdown-item" href="#">Project 2</a></li>
+          <li><a class="dropdown-item" href="#">Project 3</a></li>
+          <li><a class="dropdown-item" href="#">Project 4</a></li>
+          <li><a class="dropdown-item" href="#">Project 5</a></li>
+          <li><a class="dropdown-item" href="#">Project 6</a></li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <!-- Hoofdcontent -->
+  <main class="container-lg mt-5">
+    <!-- Project Titel -->
+    <header class="text-center mb-4">
+      <h1 class="display-4 text-muted">Projectnaam</h1>
+    </header>
+
+    <!-- Introductie -->
+    <article>
+      <p>
+        Ik ben van plan om de projectpagina's zelf verder aan te passen, afhankelijk van het specifieke project dat ik toevoeg.
+        Als er meer foto's nodig zijn voor extra uitleg, kan de pagina licht veranderen. Maar de structuur en opzet van de pagina blijft hetzelfde, tenzij er extra afbeeldingen worden toegevoegd voor meer gedetailleerde uitleg.
+      </p>
+    </article>
+
+    <!-- Projectinformatie: Foto en Korte Beschrijving -->
+    <section class="row mb-5">
+      <!-- Korte Beschrijving -->
+      <article class="col-md-6">
+        <section class="card h-100">
+          <section class="card-body">
+            <h2 class="card-title">Korte Beschrijving</h2>
+            <p class="card-text">
+              Hier komt de korte beschrijving van het project. Dit is een samenvatting van het project, wat het doel was en welke technologieën of tools werden gebruikt.
+            </p>
+          </section>
+        </section>
+      </article>
+
+      <!-- Project Foto -->
+      <figure class="col-md-6">
+        <img src="#" class="img-fluid" alt="Project afbeelding">
+        <figcaption class="text-muted">Afbeelding van het project</figcaption>
+      </figure>
+    </section>
+
+    <!-- Volledige Beschrijving -->
+    <article>
+      <h2 class="text-muted">Volledige Beschrijving</h2>
+      <p>
+        Hier komt de volledige beschrijving van het project. Dit is waar je de details van het project uitlegt, inclusief de uitdagingen, het ontwikkelingsproces, de gebruikte tools en technologieën, en eventuele andere interessante informatie over dit project kan vinden.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-secondary text-center p-3 text-white mt-5">
+    <section class="container">
+      <p class="mb-0">© 2024 Xandro Palomo Fernandez. Alle rechten voorbehouden.</p>
+    </section>
+  </footer>
+</body>
+
+</html>

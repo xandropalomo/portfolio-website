@@ -1,0 +1,118 @@
+/* Kleurklassen */
+.bg-primary {
+    background-color: #1E3A8A; /* Donkerblauw */
+}
+
+.bg-secondary {
+    background-color: #F3F4F6; /* Lichtgrijs */
+}
+
+.text-dark {
+    color: #1F2937; /* Donkergrijs */
+}
+
+.accent-color {
+    color: #3B82F6; /* Accentkleur Lichtblauw */
+}
+
+/* Algemene stijl voor afgeronde knoppen */
+.btn-nav, .btn-rounded {
+    background-color: #3B82F6; /* Accentkleur Lichtblauw */
+    border: 2px solid #1E3A8A; /* Primaire kleur Donkerblauw */
+    border-radius: 25px; /* Afgeronde hoeken */
+    padding: 5px 15px;
+    color: #F3F4F6; /* Lichtgrijze tekstkleur */
+    font-weight: bold;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-nav:hover, .btn-rounded:hover {
+    background-color: #1E3A8A; /* Hover-effect naar donkerblauw */
+    color: #F3F4F6; /* Tekst blijft lichtgrijs bij hover */
+}
+
+/* Stijl voor logo-afbeelding */
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+}
+
+/* Stijl voor profielfoto */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #1E3A8A; /* Donkerblauwe rand */
+}
+
+/* Algemene layout */
+header, footer {
+    padding: 10px 0;
+}
+
+/* Container breedte */
+.container {
+    max-width: 800px;
+}
+
+/* Stijl voor about-sectie */
+.about {
+    background-color: #F3F4F6; /* Lichtgrijze achtergrond */
+    color: #1F2937; /* Donkergrijze tekstkleur */
+    border-radius: 15px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Contactpagina-specifieke stijlen */
+.contact-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #1E3A8A; /* Donkerblauwe rand */
+    margin-bottom: 15px;
+}
+
+.methods-of-contact {
+    background-color: #F3F4F6; /* Lichtgrijze achtergrond */
+    color: #1F2937; /* Donkergrijze tekst */
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Socials aside sectie */
+.socials {
+    background-color: #1E3A8A; /* Donkerblauwe achtergrond voor onderscheid */
+    color: #F3F4F6; /* Lichtgrijze tekstkleur */
+    border-radius: 15px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.socials ul {
+    padding-left: 15px;
+}
+
+.socials ul li {
+    padding: 5px 0;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Pas de hoogte aan zoals gewenst */
+    object-fit: cover;
+}
+/* Voeg wat marge toe boven de afbeelding om ruimte voor de titel te creëren */
+.title-container {
+    margin-top: 30px; /* Voeg een marge toe zodat de titel niet in de weg zit */
+}
