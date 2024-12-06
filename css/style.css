@@ -116,3 +116,18 @@ header, footer {
 .title-container {
     margin-top: 30px; /* Voeg een marge toe zodat de titel niet in de weg zit */
 }
+
+/* Slide-down animatie voor dropdown-menu */
+.dropdown-menu {
+    display: none; /* Verberg standaard het menu */
+    opacity: 0; /* Maak het onzichtbaar */
+    transform: translateY(-20px); /* Beginpositie boven het element */
+    transition: all 0.3s ease; /* Zachte overgang */
+  }
+  
+  .dropdown-menu.show {
+    display: block; /* Toon het menu */
+    opacity: 1; /* Volledig zichtbaar */
+    transform: translateY(0); /* Naar de eindpositie */
+  }
+  
