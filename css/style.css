@@ -117,18 +117,19 @@ header, footer {
     margin-top: 30px; /* Voeg een marge toe zodat de titel niet in de weg zit */
 }
 
-/* Beginpositie van de dropdown-menu */
+/* Standaard staat de dropdown-menu verborgen */
 .dropdown-menu {
-    display: none; /* Verberg standaard het menu */
-    opacity: 0; /* Maak het onzichtbaar */
-    transform: translateY(-10px); /* Begin net boven de normale positie */
-    transition: all 0.3s ease-in-out; /* Zachte overgang */
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px) rotateX(-90deg); /* Beginpositie: buiten beeld en gekanteld */
+    transform-origin: top; /* Draaipunt is de bovenkant */
+    transition: all 0.5s ease-in-out; /* Vloeiende overgang */
   }
   
-  /* Wanneer de dropdown actief is */
+  /* Actieve staat met animatie */
   .dropdown-menu.show {
-    display: block; /* Toon het menu */
+    display: block;
     opacity: 1; /* Volledig zichtbaar */
-    transform: translateY(0); /* Op de normale positie */
+    transform: translateY(0) rotateX(0); /* Normale positie en hoek */
   }
   
