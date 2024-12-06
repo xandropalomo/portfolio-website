@@ -116,19 +116,3 @@ header, footer {
 .title-container {
     margin-top: 30px; /* Voeg een marge toe zodat de titel niet in de weg zit */
 }
-
-/* Stijl voor dropdown-menu */
-.dropdown-menu {
-    opacity: 0; /* Maak onzichtbaar bij aanvang */
-    transform: translateY(-10px); /* Beginpositie iets hoger */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth animatie */
-    display: block; /* Zorg ervoor dat Bootstrap het menu niet verbergt */
-    visibility: hidden; /* Verberg visueel voor betere toegankelijkheid */
-}
-
-/* Dropdown-menu tonen (als .show is toegevoegd) */
-.dropdown-menu.show {
-    opacity: 1; /* Volledig zichtbaar */
-    transform: translateY(0); /* Terug naar normale positie */
-    visibility: visible; /* Maak visueel beschikbaar */
-}
