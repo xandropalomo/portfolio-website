@@ -116,3 +116,20 @@ header, footer {
 .title-container {
     margin-top: 30px; /* Voeg een marge toe zodat de titel niet in de weg zit */
 }
+
+/* Startpositie van de dropdown-menu */
+.dropdown-menu {
+    display: none; /* Verberg standaard het menu */
+    opacity: 0; /* Maak het onzichtbaar */
+    transform: scale(0.9); /* Begin iets kleiner */
+    transform-origin: top center; /* Begin de schaal vanaf de bovenkant */
+    transition: all 0.3s ease; /* Zachte overgang voor alle eigenschappen */
+  }
+  
+  /* Actieve positie met fade-in en scale */
+  .dropdown-menu.show {
+    display: block; /* Toon het menu */
+    opacity: 1; /* Volledig zichtbaar */
+    transform: scale(1); /* Naar originele grootte */
+  }
+  
