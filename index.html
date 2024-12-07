@@ -4,73 +4,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-    <!-- reset jouw css -->
-    <link href="css/reset.css" rel="stylesheet">
+  <title>Contact</title>
+  <!-- reset jouw css -->
+  <link href="css/reset.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-  <link rel="stylesheet" href="css/style.css">
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9FVIzLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <!-- Voeg Leaflet CSS en JS toe -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <!-- Voeg eigen CSS toe -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/map.css">
+  <!-- Laad eigen JavaScript -->
+  <script src="./js/map.js" defer></script>
 </head>
 
 <body>
-    <!-- Navigatiebalk -->
-    <header class="p-3 bg-primary">
-      <nav class="container-fluid d-flex justify-content-between align-items-center" aria-label="Hoofd navigatie">
-        <section class="d-flex align-items-center">
-          <a href="index.html">
-            <img src="assets/images/logo.png" alt="Logo" class="rounded-circle me-3" width="50" height="50">
-          </a>
-          <ul class="nav">
-            <li><a href="index.html" class="btn btn-nav text-white">Home</a></li>
-            <li><a href="portfolio.html" class="btn btn-nav text-white">Projects</a></li>
-            <li><a href="contact.html" class="btn btn-nav text-white">Contact</a></li>
-          </ul>
-        </section>
-        <div class="dropdown">
-          <button class="btn btn-nav text-white rounded-pill dropdown-toggle" type="button"
-            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-            Projects
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
-            <li><a class="dropdown-item" href="#">Project 2</a></li>
-            <li><a class="dropdown-item" href="#">Project 3</a></li>
-            <li><a class="dropdown-item" href="#">Project 4</a></li>
-            <li><a class="dropdown-item" href="#">Project 5</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <!-- Navigatiebalk -->
+  <header class="p-3 bg-primary">
+    <nav class="container-fluid d-flex justify-content-between align-items-center" aria-label="Hoofd navigatie">
+      <section class="d-flex align-items-center">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="Logo" class="rounded-circle me-3" width="50" height="50">
+        </a>
+        <ul class="nav">
+          <li><a href="index.html" class="btn btn-nav text-white">Home</a></li>
+          <li><a href="portfolio.html" class="btn btn-nav text-white">Projects</a></li>
+          <li><a href="contact.html" class="btn btn-nav text-white">Contact</a></li>
+        </ul>
+      </section>
+      <div class="dropdown">
+        <button class="btn btn-nav text-white rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Projects
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
+          <li><a class="dropdown-item" href="#">Project 2</a></li>
+          <li><a class="dropdown-item" href="#">Project 3</a></li>
+          <li><a class="dropdown-item" href="#">Project 4</a></li>
+          <li><a class="dropdown-item" href="#">Project 5</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <!-- Hoofdcontent -->
   <main class="container mt-4">
-    <!-- Afbeelding en Naam -->
-    <section>
-      <div class="text-center">
-        <img src="assets/images/me.png" alt="Xandro Palomo Fernandez" class="profile-img img-fluid rounded-circle my-profile-image">
-        <h1 id="profile" class="mt-2 text-dark">Xandro Palomo Fernandez</h1>
-      </div>
-    </section>
+    <div class="text-center">
+      <img src="assets/images/me.png" alt="Xandro Palomo Fernandez" class="profile-img img-fluid rounded-circle my-profile-image">
+      <h1 id="profile" class="mt-2 text-dark">Xandro Palomo Fernandez</h1>
+    </div>
 
-    <!-- Over Mij Sectie -->
-    <article class="mt-5">
-      <div class="bg-light rounded p-4">
+    <div class="row mt-5">
+      <!-- Over Mij Sectie -->
+      <article class="col-lg-8 bg-light rounded p-4">
         <h2 id="about-me">Over Mij</h2>
         <p>
-          Enthousiaste en gemotiveerde student in systeem- en netwerkbeheer met een sterke passie voor IT-infrastructuren en netwerkbeheer.
-          Met een achtergrond in elektrische installatietechnieken, zowel huishoudelijk als industrieel, heb ik een solide basis in kabelbeheer, elektrische systemen,
-          en het veilig en efficiënt uitvoeren van installaties. Deze technische achtergrond geeft me het voordeel om complexe IT-projecten aan te pakken met oog voor detail.
+          Enthousiaste en gemotiveerde student in systeem- en netwerkbeheer met een sterke passie voor IT-infrastructuren en netwerkbeheer. Ik heb een solide achtergrond in elektrische installatietechnieken, zowel in huishoudelijke als industriële omgevingen. Deze ervaring stelt me in staat om kabelbeheer, elektrische systemen en het veilig en efficiënt uitvoeren van installaties met een hoge mate van nauwkeurigheid en oog voor detail aan te pakken. Deze technische basis is een waardevolle aanvulling op mijn vaardigheden in IT-beheer en netwerkconfiguratie.
         </p>
         <p>
-          Ik streef ernaar mijn kennis van netwerkconfiguratie, systeembeheer en cybersecurity verder te verdiepen en toe te passen in een dynamische en uitdagende omgeving.
+          Ik streef ernaar mijn kennis van netwerkconfiguratie, systeembeheer en cybersecurity verder te verdiepen en toe te passen in een dynamische en uitdagende werkomgeving. Mijn doel is om innovatieve oplossingen te ontwikkelen die de prestaties en veiligheid van IT-systemen verbeteren. Door voortdurend te blijven leren en nieuwe technologieën te omarmen, ben ik vastberaden om een waardevolle bijdrage te leveren aan elke organisatie waar ik voor werk.
         </p>
-      </div>
-    </article>
+      </article>
+
+      <!-- Zijbalk -->
+      <aside class="col-lg-4 border-start border-secondary">
+        <section class="p-4">
+          <h2 id="contact-details">Contact Details</h2>
+          <address class="mb-4">
+            Xandro Palomo Fernandez<br>
+            <a href="mailto:xandropalomo03@hotmail.com">xandropalomo03@hotmail.com</a><br>
+            <a href="tel:+32456789">+32 45 67 89</a>
+          </address>
+          <section class="social-links">
+            <p>Follow me on:</p>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-dark"><i class="bi bi-facebook"></i> Facebook</a></li>
+              <li><a href="#" class="text-dark"><i class="bi bi-twitter"></i> Twitter</a></li>
+              <li><a href="#" class="text-dark"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a href="#" class="text-dark"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+              <li><a href="#" class="text-dark"><i class="bi bi-github"></i> GitHub</a></li>
+            </ul>
+          </section>
+        </section>
+        <section class="map-container">
+          <h3>Waar ik woon</h3>
+          <p>Hoboken</p>
+          <div id="map" style="width: 100%; height: 300px;"></div>
+        </section>        
+      </aside>
+    </div>
   </main>
 
   <!-- Footer -->
@@ -80,5 +111,4 @@
     </div>
   </footer>
 </body>
-
 </html>
