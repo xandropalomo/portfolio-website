@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>Projecten</title>
   <!-- reset jouw css -->
   <link href="css/reset.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
@@ -36,11 +36,11 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
         </a>
         <ul class="nav">
           <li><a href="index.html" class="btn btn-nav text-white">Home</a></li>
-          <li><a href="portfolio.html" class="btn btn-nav text-white">Projects</a></li>
+          <li><a href="portfolio.html" class="btn btn-nav text-white active">Projects</a></li>
           <li><a href="contact.html" class="btn btn-nav text-white">Contact</a></li>
         </ul>
       </section>
-      <div class="dropdown">
+      <section class="dropdown">
         <button class="btn btn-nav text-white rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton"
           data-bs-toggle="dropdown" aria-expanded="false">
           Projects
@@ -53,7 +53,7 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
           <li><a class="dropdown-item" href="#">Project 5</a></li>
           <li><a class="dropdown-item" href="#">Project 6</a></li>
         </ul>
-      </div>
+      </section>
     </nav>
   </header>
 
@@ -66,6 +66,7 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
     <!-- Banner Afbeelding -->
     <figure class="mb-5">
       <img src="assets/images/beeld3.png" class="banner-img img-fluid" alt="Portfolio banner">
+      <figcaption class="text-muted text-center">Afbeelding gegenereerd door AI</figcaption>
     </figure>
 
     <!-- Projecten sectie -->
@@ -77,7 +78,8 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
           <div class="card-body">
             <h5 class="card-title">Project 1</h5>
             <p class="card-text">Een korte beschrijving van project 1.</p>
-            <a href="project1.html" class="btn btn-primary">Bekijk Project</a>
+            <a href="project1.html" class="btn btn-primary" aria-label="Bekijk details van Project 1">Bekijk Project</a>
+
           </div>
         </div>
       </div>
@@ -89,7 +91,7 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
           <div class="card-body">
             <h5 class="card-title">Project 2</h5>
             <p class="card-text">Een korte beschrijving van project 2.</p>
-            <a href="project2.html" class="btn btn-primary">Bekijk Project</a>
+            <a href="project2.html" class="btn btn-primary" aria-label="Bekijk details van Project 2">Bekijk Project</a>
           </div>
         </div>
       </div>
@@ -101,7 +103,7 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
           <div class="card-body">
             <h5 class="card-title">Project 3</h5>
             <p class="card-text">Een korte beschrijving van project 3.</p>
-            <a href="project3.html" class="btn btn-primary">Bekijk Project</a>
+            <a href="project3.html" class="btn btn-primary" aria-label="Bekijk details van Project 3">Bekijk Project</a>
           </div>
         </div>
       </div>
@@ -113,7 +115,7 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
           <div class="card-body">
             <h5 class="card-title">Project 4</h5>
             <p class="card-text">Een korte beschrijving van project 4.</p>
-            <a href="project4.html" class="btn btn-primary">Bekijk Project</a>
+            <a href="project4.html" class="btn btn-primary" aria-label="Bekijk details van Project 4">Bekijk Project</a>
           </div>
         </div>
       </div>
@@ -125,7 +127,7 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
           <div class="card-body">
             <h5 class="card-title">Project 5</h5>
             <p class="card-text">Een korte beschrijving van project 5.</p>
-            <a href="project5.html" class="btn btn-primary">Bekijk Project</a>
+            <a href="project5.html" class="btn btn-primary" aria-label="Bekijk details van Project 5">Bekijk Project</a>
           </div>
         </div>
       </div>
@@ -137,17 +139,15 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
           <div class="card-body">
             <h5 class="card-title">Project 6</h5>
             <p class="card-text">Een korte beschrijving van project 6.</p>
-            <a href="project6.html" class="btn btn-primary">Bekijk Project</a>
+            <a href="project6.html" class="btn btn-primary" aria-label="Bekijk details van Project 6">Bekijk Project</a>
           </div>
         </div>
       </div>
     </section>
   </main>
-
   <!-- Footer -->
   <footer class="bg-secondary text-center p-3 text-white mt-5">
     <p>© 2024 Xandro Palomo Fernandez. Alle rechten voorbehouden.</p>
   </footer>
 </body>
-
 </html>

@@ -29,11 +29,6 @@
     text-align: center;
 }
 
-.btn-nav:hover, .btn-rounded:hover {
-    background-color: #1E3A8A; /* Hover-effect naar donkerblauw */
-    color: #F3F4F6; /* Tekst blijft lichtgrijs bij hover */
-}
-
 /* Stijl voor logo-afbeelding */
 .logo-img {
     width: 50px;
@@ -111,8 +106,4 @@ header, footer {
     height: auto;
     max-height: 400px; /* Pas de hoogte aan zoals gewenst */
     object-fit: cover;
-}
-/* Voeg wat marge toe boven de afbeelding om ruimte voor de titel te creëren */
-.title-container {
-    margin-top: 30px; /* Voeg een marge toe zodat de titel niet in de weg zit */
 }
