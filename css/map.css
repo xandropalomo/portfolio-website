@@ -9,6 +9,6 @@
   
   #map {
     width: 100%;
-    height: 300px; /* Pas de hoogte van de kaart aan indien nodig */
+    height: 300px;
     border-radius: 8px;
   }  
