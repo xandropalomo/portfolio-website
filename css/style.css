@@ -107,3 +107,25 @@ header, footer {
     max-height: 400px; /* Pas de hoogte aan zoals gewenst */
     object-fit: cover;
 }
+
+/* Card stijlen */
+.card {
+    height: 100%; /* Zorgt ervoor dat de kaart de volledige hoogte vult */
+    display: flex;
+    flex-direction: column; /* Zorgt voor een kolomindeling */
+    justify-content: space-between; /* Houdt content binnenin goed verdeeld */
+}
+
+.card-img-top {
+    width: 100%; /* Afbeelding vult de breedte van de kaart */
+    height: 200px; /* Stelt een vaste hoogte in voor afbeeldingen */
+    object-fit: cover; /* Houdt de aspectratio van de afbeelding intact en snijdt bij indien nodig */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Optioneel: visuele scheiding tussen afbeelding en kaartinhoud */
+}
+
+.card-body {
+    flex-grow: 1; /* Zorgt ervoor dat de inhoud zich flexibel aanpast */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
