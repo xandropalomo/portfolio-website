@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecten</title>
+  <!-- reset jouw css -->
+  <link href="css/reset.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <!-- Voeg Leaflet CSS en JS toe -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+<!-- Voeg eigen CSS toe -->
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Navigatiebalk -->
+  <header class="p-3 bg-primary">
+    <nav class="container-fluid d-flex justify-content-between align-items-center" aria-label="Hoofd navigatie">
+      <section class="d-flex align-items-center">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="Logo" class="rounded-circle me-3" width="50" height="50">
+        </a>
+        <ul class="nav">
+          <li><a href="index.html" class="btn btn-nav text-white">Home</a></li>
+          <li><a href="portfolio.html" class="btn btn-nav text-white">Projects</a></li>
+          <li><a href="contact.html" class="btn btn-nav text-white">Contact</a></li>
+        </ul>
+      </section>
+      <section class="dropdown">
+        <button class="btn btn-nav text-white rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Projects
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="iot-zwaktes.html">iot-zwaktes</a></li>
+          <li><a class="dropdown-item" href="#">Project 2</a></li>
+          <li><a class="dropdown-item" href="#">Project 3</a></li>
+          <li><a class="dropdown-item" href="#">Project 4</a></li>
+          <li><a class="dropdown-item" href="#">Project 5</a></li>
+          <li><a class="dropdown-item" href="#">Project 6</a></li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <!-- Hoofdcontent -->
+  <main class="container-lg mt-5">
+    <header class="text-center mb-5">
+      <h1 class="display-4 text-muted">IoT Wireless Communicatiezwaktes</h1>
+    </header>
+
+    <div class="row">
+      <!-- Hoofdinhoud -->
+      <section class="col-lg-9">
+        <article id="overzicht" class="row mb-5">
+          <!-- Korte Beschrijving -->
+          <div class="col-md-6">
+            <section class="card h-100 shadow-sm">
+              <section class="card-body">
+                <h2 class="card-title">Overzicht</h2>
+                <p>
+                  Dit project richt zich op de beveiligingsuitdagingen van draadloze communicatie in IoT-systemen. We analyseren zwaktes, zoals onvoldoende encryptie, elektromagnetische interferentie (EMI) en netwerkinterferentie, en ontwikkelen strategieën voor een robuustere beveiliging.
+                </p>
+                <p>
+                  IoT-apparaten staan bloot aan aanzienlijke beveiligingsrisico's. Dit project onderzoekt technieken zoals cryptografie en mesh-netwerken om de communicatie tussen apparaten te beveiligen. Het project werd specifiek opgezet om zelfstandig onderzoek te doen naar een onderwerp binnen cybersecurity. Hiermee laten we zien dat we in staat zijn om zelfstandig te werken en een sterke basis hebben in cybersecurity.
+                </p>
+              </section>
+            </section>
+          </div>
+
+          <!-- Project Foto -->
+          <figure class="col-md-6 text-center">
+            <img src="assets/images/iot-zwaktes.png" class="img-fluid rounded shadow" alt="Illustratie van IoT-beveiliging">
+            <figcaption class="text-muted text-center">IoT-beveiligingstechnologieën</figcaption>
+          </figure>
+        </article>
+
+        <!-- Uitgebreide Beschrijving -->
+        <article id="uitgebreide-beschrijving">
+          <h2 class="text-muted mb-3">Uitgebreide Beschrijving</h2>
+          <p>
+            IoT-apparaten communiceren via draadloze netwerken, maar deze systemen zijn gevoelig voor verschillende zwaktes. Hier is een diepgaande analyse:
+          </p>
+          <h3>Cryptografie als Basis van Beveiliging:</h3>
+          <ul>
+            <li><strong>Symmetrische cryptografie:</strong> Gebruikt dezelfde sleutel voor encryptie en decryptie. Het is snel en efficiënt, maar vereist een veilige manier om de sleutel te delen.</li>
+            <li><strong>Asymmetrische cryptografie:</strong> Gebruikt een sleutelpaar (publiek en privé). Dit elimineert de noodzaak van sleuteluitwisseling en maakt digitale handtekeningen mogelijk voor authenticiteit.</li>
+          </ul>
+          <p>
+            Beveiliging van IoT-netwerken kan aanzienlijk worden verbeterd door end-to-end encryptie en periodieke updates van cryptografische algoritmen.
+          </p>
+          <h3>Elektromagnetische Interferentie (EMI):</h3>
+          <ul>
+            <li><strong>Effecten:</strong> EMI verstoort draadloze signalen, wat leidt tot dataverlies of fouten in communicatie.</li>
+            <li><strong>Preventieve maatregelen:</strong> Gebruik van frequentie-hopping, afscherming van apparatuur en geavanceerde modulatietechnieken.</li>
+          </ul>
+          <h3>IoT-Wireless Protocollen:</h3>
+          <ul>
+            <li><strong>Bluetooth:</strong> Energiezuinig en eenvoudig. Met frequentie-hopping biedt het een goede bescherming tegen interferentie.</li>
+            <li><strong>Wi-Fi:</strong> Breed inzetbaar en snel, maar gevoelig voor storingen in drukke omgevingen.</li>
+            <li><strong>Zigbee:</strong> Energiezuinig en geschikt voor mesh-netwerken. Ideaal voor slimme verlichting en sensoren.</li>
+            <li><strong>Z-Wave:</strong> Geoptimaliseerd voor huisautomatisering met een betrouwbare zelfherstellende mesh-structuur.</li>
+          </ul>
+        </article>
+
+        <!-- Conclusies -->
+        <article id="conclusie" class="mt-5">
+          <h2 class="text-muted">Conclusie</h2>
+          <p>
+            Dit onderzoek heeft aangetoond dat de beveiliging van IoT-draadloze communicatie een multidimensionale aanpak vereist. Cryptografie vormt de kern van gegevensbescherming, terwijl technieken zoals frequentie-hopping en mesh-netwerken bijdragen aan robuuste communicatienetwerken.
+          </p>
+          <p>
+            Toekomstig onderzoek kan zich richten op:
+          </p>
+          <ul>
+            <li>Het verbeteren van interoperabiliteit tussen verschillende protocollen.</li>
+            <li>Het ontwikkelen van universele standaarden voor beveiliging en compatibiliteit.</li>
+            <li>Innovatieve frequentiebeheerstrategieën om netwerkinterferentie te minimaliseren.</li>
+          </ul>
+          <p>
+            Dit project benadrukt de noodzaak van voortdurende inspanningen om IoT-systemen veilig, betrouwbaar en efficiënt te maken, en toont het belang van cybersecurity in de moderne digitale wereld.
+          </p>
+        </article>
+      </section>
+
+      <!-- Zijbalk -->
+      <aside class="col-lg-3 border-start border-secondary">
+        <section class="shadow-sm p-3">
+          <h3 class="card-title text-center">Navigatie</h3>
+          <nav>
+            <ul class="list-unstyled">
+              <li><a href="#overzicht" class="btn btn-link">Overzicht</a></li>
+              <li><a href="#uitgebreide-beschrijving" class="btn btn-link">Uitgebreide Beschrijving</a></li>
+              <li><a href="#conclusie" class="btn btn-link">Conclusie</a></li>
+            </ul>
+          </nav>
+          <p>Ben je geïnteresseerd in een uitgebreidere uitleg over IoT-zwaktes en hoe je ze kunt aanpakken? Klik dan op de onderstaande knop om het volledige document te downloaden.</p>
+          <a href="assets/documents/IOT-wireless-zwaktes.pdf" download class="btn btn-primary">
+            Download Document
+          </a>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-white text-center p-3 mt-5">
+    <section class="container">
+      <p class="mb-0">© 2024 Xandro Palomo Fernandez. Alle rechten voorbehouden.</p>
+    </section>
+  </footer>
+</body>
+
+</html>
