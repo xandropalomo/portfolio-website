@@ -57,7 +57,7 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
   <!-- Hoofdcontent -->
   <main class="container-lg mt-5">
     <header class="text-center mb-5">
-      <h1 class="display-4 text-muted">IoT Wireless Communicatiezwaktes</h1>
+      <h1 class="display-4 text-muted">Scripting Server Configuratie</h1>
     </header>
 
     <div class="row">
@@ -70,10 +70,10 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
               <section class="card-body">
                 <h2 class="card-title">Overzicht</h2>
                 <p>
-                  Dit project richt zich op de beveiligingsuitdagingen van draadloze communicatie in IoT-systemen. We analyseren zwaktes, zoals onvoldoende encryptie, elektromagnetische interferentie (EMI) en netwerkinterferentie, en ontwikkelen strategieën voor een robuustere beveiliging.
+                  Dit project richtte zich op het automatiseren van de configuratie van servers en Windows-clients door gebruik te maken van PowerShell-scripts. Met gegevens uit XML- en CSV-bestanden werden herhaalde taken zoals netwerkconfiguraties, het opzetten van domeinen en gebruikersbeheer volledig geautomatiseerd.
                 </p>
                 <p>
-                  IoT-apparaten staan bloot aan aanzienlijke beveiligingsrisico's. Dit project onderzoekt technieken zoals cryptografie en mesh-netwerken om de communicatie tussen apparaten te beveiligen. Het project werd specifiek opgezet om zelfstandig onderzoek te doen naar een onderwerp binnen cybersecurity. Hiermee laten we zien dat we in staat zijn om zelfstandig te werken en een sterke basis hebben in cybersecurity.
+                  Het project toonde mijn vaardigheid in scripting en het ontwerpen van oplossingen voor complexe IT-configuraties. Het bood een waardevolle oefening in het gebruik van PowerShell om processen te stroomlijnen en te standaardiseren.
                 </p>
               </section>
             </section>
@@ -81,8 +81,8 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
 
           <!-- Project Foto -->
           <figure class="col-md-6 text-center">
-            <img src="assets/images/iot-zwaktes.png" class="img-fluid rounded shadow" alt="Illustratie van IoT-beveiliging">
-            <figcaption class="text-muted text-center">IoT-beveiligingstechnologieën</figcaption>
+            <img src="assets/images/scripting.png" class="img-fluid rounded shadow" alt="Scripting Server Configuratie">
+            <figcaption class="text-muted text-center">Automatisering van serverconfiguraties</figcaption>
           </figure>
         </article>
 
@@ -90,27 +90,23 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
         <article id="uitgebreide-beschrijving">
           <h2 class="text-muted mb-3">Uitgebreide Beschrijving</h2>
           <p>
-            IoT-apparaten communiceren via draadloze netwerken, maar deze systemen zijn gevoelig voor verschillende zwaktes. Hier is een diepgaande analyse:
+            Dit project bestond uit het schrijven van scripts die een breed scala aan server- en clientconfiguraties automatiseren:
           </p>
-          <h3>Cryptografie als Basis van Beveiliging:</h3>
+          <h3>1. Basisconfiguratie:</h3>
           <ul>
-            <li><strong>Symmetrische cryptografie:</strong> Gebruikt dezelfde sleutel voor encryptie en decryptie. Het is snel en efficiënt, maar vereist een veilige manier om de sleutel te delen.</li>
-            <li><strong>Asymmetrische cryptografie:</strong> Gebruikt een sleutelpaar (publiek en privé). Dit elimineert de noodzaak van sleuteluitwisseling en maakt digitale handtekeningen mogelijk voor authenticiteit.</li>
+            <li>Het instellen van server- en clientnamen via XML-bestanden.</li>
+            <li>Netwerkconfiguraties zoals IP-adressen, gateways en DNS-servers.</li>
+            <li>Alle wijzigingen werden gelogd in een centrale log-bestand.</li>
           </ul>
-          <p>
-            Beveiliging van IoT-netwerken kan aanzienlijk worden verbeterd door end-to-end encryptie en periodieke updates van cryptografische algoritmen.
-          </p>
-          <h3>Elektromagnetische Interferentie (EMI):</h3>
+          <h3>2. Domein Configuratie:</h3>
           <ul>
-            <li><strong>Effecten:</strong> EMI verstoort draadloze signalen, wat leidt tot dataverlies of fouten in communicatie.</li>
-            <li><strong>Preventieve maatregelen:</strong> Gebruik van frequentie-hopping, afscherming van apparatuur en geavanceerde modulatietechnieken.</li>
+            <li>Installatie van een domain controller, met controles of domeinen reeds bestaan.</li>
+            <li>Automatisch aanmaken van gebruikers, beveiligingsgroepen en organisatorische eenheden (OU’s).</li>
           </ul>
-          <h3>IoT-Wireless Protocollen:</h3>
+          <h3>3. Bestandsdeling en Rechten:</h3>
           <ul>
-            <li><strong>Bluetooth:</strong> Energiezuinig en eenvoudig. Met frequentie-hopping biedt het een goede bescherming tegen interferentie.</li>
-            <li><strong>Wi-Fi:</strong> Breed inzetbaar en snel, maar gevoelig voor storingen in drukke omgevingen.</li>
-            <li><strong>Zigbee:</strong> Energiezuinig en geschikt voor mesh-netwerken. Ideaal voor slimme verlichting en sensoren.</li>
-            <li><strong>Z-Wave:</strong> Geoptimaliseerd voor huisautomatisering met een betrouwbare zelfherstellende mesh-structuur.</li>
+            <li>Automatisch aanmaken van mappen en shares gebaseerd op CSV-bestanden.</li>
+            <li>Toekennen van NTFS- en share-rechten aan gebruikers en groepen.</li>
           </ul>
         </article>
 
@@ -118,18 +114,18 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
         <article id="conclusie" class="mt-5">
           <h2 class="text-muted">Conclusie</h2>
           <p>
-            Dit onderzoek heeft aangetoond dat de beveiliging van IoT-draadloze communicatie een multidimensionale aanpak vereist. Cryptografie vormt de kern van gegevensbescherming, terwijl technieken zoals frequentie-hopping en mesh-netwerken bijdragen aan robuuste communicatienetwerken.
+            Dit project heeft bewezen hoe krachtige scriptingoplossingen IT-configuraties kunnen versnellen en standaardiseren. Het gebruik van PowerShell maakte het mogelijk om taken zoals domeinconfiguratie en netwerkbeheer te automatiseren, waardoor fouten werden geminimaliseerd.
           </p>
           <p>
-            Toekomstig onderzoek kan zich richten op:
+            Toekomstige aanpassingen:
           </p>
           <ul>
-            <li>Het verbeteren van interoperabiliteit tussen verschillende protocollen.</li>
-            <li>Het ontwikkelen van universele standaarden voor beveiliging en compatibiliteit.</li>
-            <li>Innovatieve frequentiebeheerstrategieën om netwerkinterferentie te minimaliseren.</li>
+            <li>het script verder afmaken en optimaliseren</li>
+            <li>het script zo maken dat alles makkelijker maakt voor de gebruiker (nu moet de gebruiker handmatig verplichte aanpassingen doen zodat dit zal werken)</li>
+            <li>nog iets</li>
           </ul>
           <p>
-            Dit project benadrukt de noodzaak van voortdurende inspanningen om IoT-systemen veilig, betrouwbaar en efficiënt te maken, en toont het belang van cybersecurity in de moderne digitale wereld.
+            Dit project benadrukt mijn vaardigheid in het ontwikkelen van robuuste scripts en mijn inzet voor efficiënte automatisering.
           </p>
         </article>
       </section>
@@ -143,15 +139,19 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
               <li><a href="#overzicht" class="btn btn-link">Overzicht</a></li>
               <li><a href="#uitgebreide-beschrijving" class="btn btn-link">Uitgebreide Beschrijving</a></li>
               <li><a href="#conclusie" class="btn btn-link">Conclusie</a></li>
-            </ul>
+              </ul>
           </nav>
           <hr>
-          <p>Ben je geïnteresseerd in een uitgebreidere uitleg over IoT-zwaktes en hoe je ze kunt aanpakken? Klik dan op de onderstaande knop om het volledige document te downloaden.</p>
-          <a href="assets/documents/IOT-wireless-zwaktes.pdf" download class="btn btn-primary">
-            Download Document
-          </a>
+          <p>Ben je geïnteresseerd in de volledige details van dit project? Download dan het volledige document hieronder.</p>
+          <a href="assets/documents/scripting-project.pdf" download class="btn btn-primary">
+          Download Volledig Document</a>
+          <hr>
+          <p>Wil je het script zelf eens testen of bekijken? Download dan deze ZIP-map en lees alstublieft de README aandachtig voordat je dit test op virtuele machines.</p>
+          <a href="assets/documents/scripting.zip" download class="btn btn-primary">
+          Download Script (ZIP-bestand)</a>
         </section>
       </aside>
+
     </div>
   </main>
 
@@ -162,5 +162,4 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" d
     </section>
   </footer>
 </body>
-
 </html>
