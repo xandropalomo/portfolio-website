@@ -13,3 +13,6 @@ L.circle([51.181927, 4.364613], {
   fillOpacity: 0.4, // Doorzichtigheid
   radius: 1500 // Grote straal: 1.5 kilometer
 }).addTo(map);
+
+let apMarker = L.marker([51.23009, 4.41616]).addTo(map);
+apMarker.bindPopup("<b>AP-Hogeschool").openPopup();
