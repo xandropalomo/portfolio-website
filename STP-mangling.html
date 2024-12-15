@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powershell scripting</title>
+  <!-- reset jouw css -->
+  <link href="css/reset.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <!-- Voeg Leaflet CSS en JS toe -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+<!-- Voeg eigen CSS toe -->
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navigatiebalk -->
+    <header class="p-3 bg-primary">
+      <nav class="container-fluid d-flex justify-content-between align-items-center" aria-label="Hoofd navigatie">
+        <section class="d-flex align-items-center">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="Logo" class="rounded-circle me-3 logo-img">
+          </a>
+          <ul class="nav">
+            <li><a href="index.html" class="btn btn-nav text-white">Home</a></li>
+            <li><a href="portfolio.html" class="btn btn-nav text-white">Projects</a></li>
+            <li><a href="contact.html" class="btn btn-nav text-white">Contact</a></li>
+          </ul>
+        </section>
+        <section class="dropdown">
+          <button class="btn btn-nav text-white rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="iot-zwaktes.html">iot-zwaktes</a></li>
+            <li><a class="dropdown-item" href="scripting.html">Powershell scripting</a></li>
+            <li><a class="dropdown-item" href="STP-mangling.html">STP-mangling</a></li>
+            <li><a class="dropdown-item" href="#">Project 4</a></li>
+            <li><a class="dropdown-item" href="#">Project 5</a></li>
+            <li><a class="dropdown-item" href="#">Project 6</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+  <!-- Hoofdcontent -->
+  <main class="container-lg mt-5">
+    <header class="text-center mb-5">
+      <h1 class="display-4 text-muted">STP Mangling Cybersecurity</h1>
+    </header>
+
+    <div class="row">
+      <!-- Zijbalk -->
+      <aside class="col-lg-3 border-secondary">
+        <section class="shadow-sm p-3">
+          <h3 class="text-center">Navigatie</h3>
+          <nav>
+            <ul class="list-unstyled">
+              <li><a href="#overzicht" class="btn btn-link">Overzicht</a></li>
+              <li><a href="#uitgebreide-beschrijving" class="btn btn-link">Uitgebreide Beschrijving</a></li>
+              <li><a href="#conclusie" class="btn btn-link">Conclusie</a></li>
+            </ul>
+          </nav>
+          <hr>
+          <p>Ben je geïnteresseerd in de volledige details van dit project? Download dan het volledige document hieronder.</p>
+          <a href="assets/documents/STP-mangling.pdf" download class="btn btn-primary">
+            Download Volledig Document
+          </a>
+        </section>
+      </aside>
+
+      <!-- Hoofdinhoud -->
+      <section class="col-lg-9 border-start">
+        <article id="overzicht" class="row mb-5">
+          <!-- Korte Beschrijving -->
+          <div class="col-md-6">
+            <section class="card h-100 shadow-sm">
+              <section class="card-body">
+                <h2 class="card-title">Overzicht</h2>
+                <p>
+                  Het **STP Mangling-project** is opgezet om onderzoek te doen naar de kwetsbaarheden binnen het **Spanning Tree Protocol (STP)**. Het doel van dit project is niet alleen om inzicht te krijgen in hoe aanvallen zoals STP Manipulation en Switch Spoofing kunnen plaatsvinden, maar ook om mogelijke beveiligingsmaatregelen te identificeren.
+                </p>
+                <p>
+                  Dit project biedt ons de kans om een onderwerp waarin we weinig of geen voorkennis hebben, grondig te bestuderen. Hiermee bewijzen we dat we in staat zijn om zelfstandig onderzoek te doen, complexe problemen te analyseren en praktische oplossingen te ontwikkelen.
+                </p>
+              </section>
+            </section>
+          </div>
+
+          <!-- Foto Galerij -->
+            <section class="col-md-6">
+                <section class="row g-3">
+                <!-- Twee kleinere foto's naast elkaar -->
+                <section class="col-6">
+                    <figure class="text-center">
+                    <img src="assets/images/STP.png" class="img-fluid rounded shadow" alt="STP aanval">
+                    <figcaption class="text-muted">Illustratie van een STP-aanval</figcaption>
+                    </figure>
+                </section>
+                <section class="col-6">
+                    <figure class="text-center">
+                    <img src="assets/images/STP2.png" class="img-fluid rounded shadow" alt="STP topologie">
+                    <figcaption class="text-muted">Voorbeeld van een STP-topologie</figcaption>
+                    </figure>
+                </section>
+                </section>
+                <!-- Grote foto eronder -->
+                <section class="row mt-3">
+                <section class="col-12">
+                    <figure class="text-center">
+                    <img src="assets/images/kali.png" class="img-fluid rounded shadow" alt="Kali Linux">
+                    <figcaption class="text-muted">Gebruik van Kali Linux voor STP-testen</figcaption>
+                    </figure>
+                </section>
+                </section>
+            </section>
+        </article>
+        <!-- Uitgebreide Beschrijving -->
+        <article id="uitgebreide-beschrijving">
+            <h2 class="text-muted mb-3">Uitgebreide Beschrijving</h2>
+            <p>
+              Dit project bestudeerde het Spanning Tree Protocol en de kwetsbaarheden ervan in netwerkomgevingen. Hieronder staan de belangrijkste aandachtspunten:
+            </p>
+            <h3>1. Aanvalsanalyses:</h3>
+            <ul>
+              <li>Demonstratie van STP Manipulation-aanvallen.</li>
+              <li>Identificeren van switch loops en netwerkcongestie.</li>
+              <li>Hoe aanvallers STP-prioriteiten kunnen wijzigen.</li>
+            </ul>
+            <h3>2. Beveiligingsstrategieën:</h3>
+            <ul>
+              <li>Inzetten van BPDU Guard en Root Guard.</li>
+              <li>Het belang van port security en netwerksegmentatie.</li>
+              <li>Educatie van netwerkbeheerders over best practices.</li>
+            </ul>
+          </article>
+  
+          <!-- Conclusies -->
+          <article id="conclusie" class="mt-5">
+            <h2 class="text-muted">Conclusie</h2>
+            <p>
+              Het STP Mangling-project onderstreept het belang van geavanceerde beveiligingsstrategieën in moderne netwerken. Door STP-aanvallen te begrijpen en tegenmaatregelen te implementeren, kunnen organisaties hun netwerken beter beschermen tegen bedreigingen.
+            </p>
+            <p>
+              Aanbevelingen omvatten:
+            </p>
+            <ul>
+              <li>
+                <strong>Implementatie van STP-beveiligingsprotocollen:</strong> Gebruik BPDU Guard en Root Guard.
+              </li>
+              <li>
+                <strong>Educatie en training:</strong> Zorg dat netwerkbeheerders volledig op de hoogte zijn van de risico's en oplossingen.
+              </li>
+            </ul>
+          </article>
+        </section>
+      </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-white text-center p-3 mt-5">
+    <section class="container">
+      <p class="mb-0">© 2024 Xandro Palomo Fernandez. Alle rechten voorbehouden.</p>
+    </section>
+  </footer>
+</body>
+
+</html>
