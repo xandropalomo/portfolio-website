@@ -36,14 +36,15 @@
     margin-right: 8px;
 }
 
-/* Stijl voor profielfoto */
 .profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 200px; /* Breedte van de afbeelding */
+    height: 200px; /* Hoogte van de afbeelding */
+    border-radius: 50%; /* Maakt de afbeelding rond */
     margin-bottom: 10px;
     border: 3px solid #1E3A8A; /* Donkerblauwe rand */
+    object-fit: cover; /* Houdt de verhoudingen van de afbeelding intact */
 }
+
 
 /* Algemene layout */
 header, footer {
