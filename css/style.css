@@ -12,7 +12,7 @@
 }
 
 /* Algemene stijl voor afgeronde knoppen */
-.btn-nav, .btn-rounded {
+.btn-nav {
     background-color: #3B82F6; /* Accentkleur Lichtblauw */
     border: 2px solid #1E3A8A; /* Primaire kleur Donkerblauw */
     border-radius: 25px; /* Afgeronde hoeken */
@@ -45,25 +45,6 @@
 .about {
     background-color: #F3F4F6; /* Lichtgrijze achtergrond */
     color: #1F2937; /* Donkergrijze tekstkleur */
-    border-radius: 15px;
-    padding: 15px;
-    text-align: left;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Contactpagina-specifieke stijlen */
-.contact-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 2px solid #1E3A8A; /* Donkerblauwe rand */
-    margin-bottom: 15px;
-}
-
-/* Socials aside sectie */
-.socials {
-    background-color: #1E3A8A; /* Donkerblauwe achtergrond voor onderscheid */
-    color: #F3F4F6; /* Lichtgrijze tekstkleur */
     border-radius: 15px;
     padding: 15px;
     text-align: left;
