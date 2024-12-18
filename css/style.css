@@ -11,10 +11,6 @@
     color: #1F2937; /* Donkergrijs */
 }
 
-.accent-color {
-    color: #3B82F6; /* Accentkleur Lichtblauw */
-}
-
 /* Algemene stijl voor afgeronde knoppen */
 .btn-nav, .btn-rounded {
     background-color: #3B82F6; /* Accentkleur Lichtblauw */
